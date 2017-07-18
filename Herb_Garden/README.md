@@ -100,6 +100,20 @@ Now we know where our happy plant threshold lies we can add a watering supply.
 ## Adding a water supply
 *** Firstly - and most importantly, do NOT under any circumstances place your water supply above your hose exit point. All this does is start siphoning your supply until you have run out of water (its basic physics really) ***
 
+Firstly we need to add our motor. Here we shall connect the power connector to digital pin 7 (D7) and like the sensor treat this as a switch. 
+Next we may add a conditional to the code, whereupon if our moisture content is lower than our threshold, our node mcu shall water the plant. 
+
+
+
+The problem with this arrises in the delay between watering and the soil taking up the moisture. It is for this reason we shall also have to reduce the reading times to atleast once every 15 minutes (if ot mrore). Conveniently this will also increase the lifetime of our sensors. 
+
+Next we need to permanently fix our hoze so that it does not spray everywhere and decide on a duration it needs to fill the watering dish of your plants. 
+
+
+And voila, you have a self watering plant system. 
+
+
+
 
 ## Finally if you really want, you can either connect multiple nodemcus to the same app, or publish your own version for your friends and family to be able to view it 
 <img src="20227731_10159018988640058_1542033048_o.png" alt="Drawing" style="width: 50px;"/>
