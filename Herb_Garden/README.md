@@ -14,7 +14,7 @@ and finally a WiFi connection (optional but useful)
 Provided we already know how to flash and run the NodeMCU controller (find the blink example online if you dont), we wish to test the range of our humidity sensors. 
 We can do this by connecting the nodeMCU to a computer and viewing the results in our serial window. 
 
-If like me you have opted for the rather inexpensive T-28 unit, this has 4 available pins: A power, a ground , a digital and an analog. As I am interested in plotting the difference of soil humidity over time, I shall opt to connect the analog connector to the a0 pin on the nodemcu, the vcc pin to a 3v pin, and the ground to the corresponding ground. 
+If like me you have opted for the rather inexpensive FC-28 unit, this has 4 available pins: A power, a ground , a digital and an analog. As I am interested in plotting the difference of soil humidity over time, I shall opt to connect the analog connector to the a0 pin on the nodemcu, the vcc pin to a 3v pin, and the ground to the corresponding ground. 
 
 <img src="615DPhAC0wL._SL1100_.jpg" alt="Drawing" style="width: 50px;"/>
 
