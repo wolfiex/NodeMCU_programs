@@ -93,7 +93,7 @@ void loop()
 In blynk if you select a history graph (900 energy units) It will be able to periodically record your nodemcu readings. You can then manually experiment with how the readings change as you water your plants. 
 
 
-<img src="Herb_Garden/20196443_10159019011435058_2020962417_o.png" alt="Drawing" style="width: 50px;"/>
+<img src="20196443_10159019011435058_2020962417_o.png" alt="Drawing" style="width: 50px;"/>
 
 Now we know where our happy plant threshold lies we can add a watering supply. 
 
@@ -102,5 +102,5 @@ Now we know where our happy plant threshold lies we can add a watering supply.
 
 
 ## Finally if you really want, you can either connect multiple nodemcus to the same app, or publish your own version for your friends and family to be able to view it 
-<img src="Herb_Garden/20227731_10159018988640058_1542033048_o.png" alt="Drawing" style="width: 50px;"/>
+<img src="20227731_10159018988640058_1542033048_o.png" alt="Drawing" style="width: 50px;"/>
  
