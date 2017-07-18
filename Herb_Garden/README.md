@@ -33,6 +33,25 @@ void loop()
 
 ```
 
-Since these units have a finite lifetime, and work by measuring the resistance of the soil, it is not in our interest to have them permanently on. It is for this reason we shall add an on-off timer as well as the measurement delay above. 
+Since these units have a finite lifetime, and work by measuring the resistance of the soil, it is not in our interest to have them permanently on. It is for this reason we shall add an on-off timer as well as the measurement delay above. To do this we can move our vcc connector to the D6 pin. This is a digital pin and can be used as an on off power switch. 
 
+
+```arduino
+void setup()
+{  
+  Serial.begin(9600);
+  pinMode(D6, OUTPUT); 
+}
+
+void loop()
+{
+  digitalWrite(D6, HIGH);#allow 3v to pass through the D6 pin. 
+  delay(10000); #allow 1 second warmup time
+  Serial.print(analogRead(A0));
+  pinMode(D6, INPUT); #turn the pin off by making it an input
+  
+  delay(40000);
+}
+
+```
 
