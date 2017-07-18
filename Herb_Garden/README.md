@@ -1,4 +1,4 @@
-# A simple automated plant watering system using the node_MCU arduino board. 
+# A simple automated plant watering system using the Node_MCU (arduino) board. 
 
 #### Requirements
 1. waterproof water pump capable of running from 3/5v (£5)
