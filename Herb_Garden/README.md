@@ -14,8 +14,11 @@ and finally a WiFi connection (optional but useful)
 Provided we already know how to flash and run the NodeMCU controller (find the blink example online if you dont), we wish to test the range of our humidity sensors. 
 We can do this by connecting the nodeMCU to a computer and viewing the results in our serial window. 
 
+If like me you have opted for the rather inexpensive T-28 unit, this has 4 available pins: A power, a ground , a digital and an analog. As I am interested in plotting the difference of soil humidity over time, I shall opt to connect the analog connector to the a0 pin on the nodemcu, the vcc pin to a 3v pin, and the ground to the corresponding ground. 
 
-Run this with the sensor tips in water, and out on a completely dry surface. 
+<img src="615DPhAC0wL._SL1100_.jpg" alt="Drawing" style="width: 200px;"/>
+
+To test the ranges of our sensor we can run the following code and have the pins situated in and out of a glass of water. Since these units have a finite lifetime, and work by measuring the resistance of the soil, it is not in our interest to have them permanently on. It is for this reason we shall
 
 ```arduino
 void setup()
@@ -29,3 +32,7 @@ void loop()
 }
 
 ```
+
+Since these units have a finite lifetime, and work by measuring the resistance of the soil, it is not in our interest to have them permanently on. It is for this reason we shall add an on-off timer as well as the measurement delay above. 
+
+
