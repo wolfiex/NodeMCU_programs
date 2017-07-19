@@ -100,6 +100,12 @@ Now we know where our happy plant threshold lies we can add a watering supply.
 ## Adding a water supply
 ** Firstly - and most importantly, do NOT under any circumstances place your water supply above your hose exit point. All this does is start siphoning your supply until you have run out of water (its basic physics really) **
 
+<img src="20182943_10159021633925058_1766349011_n.png" alt="Drawing" style="width: 50px;"/>
+ 
+
+
+
+
 Firstly we need to add our motor. Here we shall connect the power connector to digital pin 7 (D7) and like the sensor treat this as a switch. 
 Next we may add a conditional to the code, whereupon if our moisture content is lower than our threshold, our node mcu shall water the plant. 
 
