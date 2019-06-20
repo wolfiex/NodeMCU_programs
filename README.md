@@ -1,3 +1,8 @@
+```
+sudo apt-get install screen 
+screen /dev/ttyUSB0 
+```
+
 # esptool.py
 
 A Python-based, open source, platform independent, utility to communicate with the ROM bootloader in Espressif ESP8266 & ESP32 chips.
